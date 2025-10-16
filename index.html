@@ -1,1 +1,362 @@
-hi!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Lumière Hotel & Spa | Luxury Dining Menu</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Great+Vibes&display=swap');
+
+    body {
+      margin: 0;
+      font-family: "Playfair Display", serif;
+      background-color: #111;
+      color: #f8f8f8;
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      text-align: center;
+      color: #fff;
+      padding: 140px 20px;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+    }
+
+    header h1, header p {
+      position: relative;
+      z-index: 2;
+    }
+
+    header h1 {
+      font-family: "Great Vibes", cursive;
+      font-size: 4rem;
+      color: #d4af37;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #f0e6d2;
+      margin-top: 10px;
+      letter-spacing: 1px;
+    }
+
+    .menu-container {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+
+    .menu-section {
+      margin-bottom: 70px;
+    }
+
+    .menu-section h2 {
+      text-align: center;
+      color: #d4af37;
+      font-size: 2.5rem;
+      border-bottom: 2px solid #d4af37;
+      display: inline-block;
+      margin: 0 auto 40px;
+      padding-bottom: 10px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .menu-item {
+      background: rgba(255,255,255,0.05);
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 5px 25px rgba(212,175,55,0.3);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .menu-content {
+      padding: 15px;
+    }
+
+    .menu-content h3 {
+      margin: 0;
+      font-size: 1.3rem;
+      color: #fff;
+    }
+
+    .menu-content p {
+      margin-top: 6px;
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    .price {
+      display: block;
+      margin-top: 6px;
+      color: #d4af37;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      background: #000;
+      padding: 30px 10px;
+      color: #d4af37;
+      border-top: 1px solid #d4af37;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.8rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>La Lumière Hotel & Spa</h1>
+    <p>World-Class Fine Dining Experience</p>
+  </header>
+
+  <div class="menu-container">
+
+    <!-- Starters -->
+    <section class="menu-section">
+      <h2>Starters & Soups</h2>
+      <div class="menu-grid">
+
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-content">
+            <h3>French Onion Soup</h3>
+            <p>Caramelized onions in beef broth with melted gruyère cheese.</p>
+            <span class="price">$16</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1603133872878-684fbe2c5f74?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-content">
+            <h3>Smoked Salmon Crostini</h3>
+            <p>Toasted baguette with dill cream cheese and caviar pearls.</p>
+            <span class="price">$22</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1572448862529-41a6a1a6e54e?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-content">
+            <h3>Caprese Salad</h3>
+            <p>Fresh mozzarella, vine tomatoes, basil & balsamic glaze.</p>
+            <span class="price">$18</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Chinese Cuisine -->
+    <section class="menu-section">
+      <h2>Chinese Cuisine</h2>
+      <div class="menu-grid">
+
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1604908176997-9e73b85f3d5b?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-content">
+            <h3>Kung Pao Chicken</h3>
+            <p>Stir-fried chicken, peanuts, and chili peppers in Sichuan sauce.</p>
+            <span class="price">$25</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-content">
+            <h3>Dim Sum Basket</h3>
+            <p>Assorted steamed dumplings filled with shrimp and vegetables.</p>
+            <span class="price">$20</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1607112560131-7b38f4221e2f?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-content">
+            <h3>Beef Chow Mein</h3>
+            <p>Wok-tossed noodles with tender beef and soy glaze.</p>
+            <span class="price">$22</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Korean Cuisine -->
+    <section class="menu-section">
+      <h2>Korean Cuisine</h2>
+      <div class="menu-grid">
+
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be85?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-content">
+            <h3>Bibimbap</h3>
+            <p>Rice bowl topped with vegetables, fried egg & gochujang sauce.</p>
+            <span class="price">$24</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1617196035641-9e6e1b8e3cb1?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-content">
+            <h3>Korean BBQ Short Ribs</h3>
+            <p>Grilled marinated ribs in soy, sesame, and garlic glaze.</p>
+            <span class="price">$38</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1631515242803-978a8f6b7b11?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-content">
+            <h3>Tteokbokki</h3>
+            <p>Spicy Korean rice cakes in a fiery gochujang sauce.</p>
+            <span class="price">$18</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Pakistani Cuisine -->
+    <section class="menu-section">
+      <h2>Pakistani & Desi Dishes</h2>
+      <div class="menu-grid">
+
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1599305090598-fe4a5f9f5a3c?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-content">
+            <h3>Chicken Biryani</h3>
+            <p>Fragrant basmati rice layered with spiced chicken & saffron.</p>
+            <span class="price">$22</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1601050690597-1b92a4046d7c?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-content">
+            <h3>Mutton Karahi</h3>
+            <p>Tender mutton cooked with tomato gravy, chilies & spices.</p>
+            <span class="price">$28</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1617196035641-9e6e1b8e3cb1?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-content">
+            <h3>Seekh Kebabs</h3>
+            <p>Grilled minced meat skewers with herbs and chutney.</p>
+            <span class="price">$20</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Desserts -->
+    <section class="menu-section">
+      <h2>Desserts & Sweets</h2>
+      <div class="menu-grid">
+
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1606312616077-0a8393cdd5e1?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-content">
+            <h3>Chocolate Lava Cake</h3>
+            <p>Rich molten chocolate cake with vanilla ice cream.</p>
+            <span class="price">$16</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1606914469735-9f42b84553a6?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-content">
+            <h3>Gulab Jamun</h3>
+            <p>Warm sweet milk dumplings soaked in cardamom syrup.</p>
+            <span class="price">$10</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1599785209707-28b9d870b55c?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-content">
+            <h3>Tiramisu</h3>
+            <p>Classic Italian dessert with espresso-soaked layers.</p>
+            <span class="price">$14</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Beverages -->
+    <section class="menu-section">
+      <h2>Beverages & Mocktails</h2>
+      <div class="menu-grid">
+
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1604909053284-1be9fa9b0e64?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-content">
+            <h3>Fresh Mint Lemonade</h3>
+            <p>Refreshing mint-infused lemonade served chilled.</p>
+            <span class="price">$8</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-content">
+            <h3>Virgin Mojito</h3>
+            <p>Fresh lime, mint, and soda with a hint of sweetness.</p>
+            <span class="price">$9</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1627259869700-96e4b7a6b97e?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-content">
+            <h3>Cold Coffee Delight</h3>
+            <p>Iced espresso with milk and chocolate drizzle.</p>
+            <span class="price">$10</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2025 La Lumière Hotel & Spa | Crafted for a Luxurious Dining Experience
+  </footer>
+
+</body>
+</html>
